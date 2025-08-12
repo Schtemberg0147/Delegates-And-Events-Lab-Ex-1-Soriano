@@ -29,208 +29,206 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistration));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.studentNumberLabel = new System.Windows.Forms.Label();
+            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.ageLabel = new System.Windows.Forms.Label();
+            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.programLabel = new System.Windows.Forms.Label();
+            this.middleNameLabel = new System.Windows.Forms.Label();
+            this.contactNumberLabel = new System.Windows.Forms.Label();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.studentNoTextBox = new System.Windows.Forms.TextBox();
+            this.middleNameTextBox = new System.Windows.Forms.TextBox();
+            this.contactNoTextBox = new System.Windows.Forms.TextBox();
+            this.ageTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.addressRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.programComboBox = new System.Windows.Forms.ComboBox();
             this.nextButton = new System.Windows.Forms.Button();
             this.topPanel = new System.Windows.Forms.Panel();
             this.leftPanel = new System.Windows.Forms.Panel();
             this.rightPanel = new System.Windows.Forms.Panel();
             this.bottomPanel = new System.Windows.Forms.Panel();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // studentNumberLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.ForeColor = System.Drawing.Color.Wheat;
-            this.label1.Location = new System.Drawing.Point(132, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student No.:";
+            this.studentNumberLabel.AutoSize = true;
+            this.studentNumberLabel.BackColor = System.Drawing.Color.Transparent;
+            this.studentNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.studentNumberLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.studentNumberLabel.Location = new System.Drawing.Point(209, 118);
+            this.studentNumberLabel.Name = "studentNumberLabel";
+            this.studentNumberLabel.Size = new System.Drawing.Size(115, 17);
+            this.studentNumberLabel.TabIndex = 0;
+            this.studentNumberLabel.Text = "Student Number:";
             // 
-            // label2
+            // lastNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(132, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Last Name:";
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lastNameLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.lastNameLabel.Location = new System.Drawing.Point(210, 344);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(80, 17);
+            this.lastNameLabel.TabIndex = 1;
+            this.lastNameLabel.Text = "Last Name:";
             // 
-            // label3
+            // ageLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(132, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Age:";
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ageLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ageLabel.Location = new System.Drawing.Point(209, 400);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(37, 17);
+            this.ageLabel.TabIndex = 2;
+            this.ageLabel.Text = "Age:";
             // 
-            // label4
+            // firstNameLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(286, 131);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "First Name:";
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.firstNameLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.firstNameLabel.Location = new System.Drawing.Point(209, 233);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(80, 17);
+            this.firstNameLabel.TabIndex = 3;
+            this.firstNameLabel.Text = "First Name:";
             // 
-            // label5
+            // programLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(286, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Program:";
+            this.programLabel.AutoSize = true;
+            this.programLabel.BackColor = System.Drawing.Color.Transparent;
+            this.programLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.programLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.programLabel.Location = new System.Drawing.Point(209, 177);
+            this.programLabel.Name = "programLabel";
+            this.programLabel.Size = new System.Drawing.Size(66, 17);
+            this.programLabel.TabIndex = 4;
+            this.programLabel.Text = "Program:";
             // 
-            // label6
+            // middleNameLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(434, 131);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Middle Name:";
+            this.middleNameLabel.AutoSize = true;
+            this.middleNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.middleNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.middleNameLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.middleNameLabel.Location = new System.Drawing.Point(209, 288);
+            this.middleNameLabel.Name = "middleNameLabel";
+            this.middleNameLabel.Size = new System.Drawing.Size(94, 17);
+            this.middleNameLabel.TabIndex = 5;
+            this.middleNameLabel.Text = "Middle Name:";
             // 
-            // label7
+            // contactNumberLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(286, 182);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Contact No.:";
+            this.contactNumberLabel.AutoSize = true;
+            this.contactNumberLabel.BackColor = System.Drawing.Color.Transparent;
+            this.contactNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.contactNumberLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.contactNumberLabel.Location = new System.Drawing.Point(209, 457);
+            this.contactNumberLabel.Name = "contactNumberLabel";
+            this.contactNumberLabel.Size = new System.Drawing.Size(114, 17);
+            this.contactNumberLabel.TabIndex = 6;
+            this.contactNumberLabel.Text = "Contact Number:";
             // 
-            // label8
+            // addressLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.ForeColor = System.Drawing.SystemColors.Window;
-            this.label8.Location = new System.Drawing.Point(132, 244);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Address:";
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.BackColor = System.Drawing.Color.Transparent;
+            this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.addressLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.addressLabel.Location = new System.Drawing.Point(211, 515);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(64, 17);
+            this.addressLabel.TabIndex = 7;
+            this.addressLabel.Text = "Address:";
             // 
-            // textBox1
+            // studentNoTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(135, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 22);
-            this.textBox1.TabIndex = 8;
+            this.studentNoTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.studentNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.studentNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNoTextBox.Location = new System.Drawing.Point(212, 143);
+            this.studentNoTextBox.Name = "studentNoTextBox";
+            this.studentNoTextBox.Size = new System.Drawing.Size(164, 22);
+            this.studentNoTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // middleNameTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(437, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 22);
-            this.textBox2.TabIndex = 9;
+            this.middleNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.middleNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middleNameTextBox.Location = new System.Drawing.Point(212, 312);
+            this.middleNameTextBox.Name = "middleNameTextBox";
+            this.middleNameTextBox.Size = new System.Drawing.Size(164, 22);
+            this.middleNameTextBox.TabIndex = 9;
             // 
-            // textBox4
+            // contactNoTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(286, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(145, 22);
-            this.textBox4.TabIndex = 11;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.contactNoTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.contactNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contactNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNoTextBox.Location = new System.Drawing.Point(212, 482);
+            this.contactNoTextBox.Name = "contactNoTextBox";
+            this.contactNoTextBox.Size = new System.Drawing.Size(164, 22);
+            this.contactNoTextBox.TabIndex = 11;
             // 
-            // textBox5
+            // ageTextBox
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(135, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(145, 22);
-            this.textBox5.TabIndex = 12;
+            this.ageTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.ageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageTextBox.Location = new System.Drawing.Point(212, 425);
+            this.ageTextBox.Name = "ageTextBox";
+            this.ageTextBox.Size = new System.Drawing.Size(164, 22);
+            this.ageTextBox.TabIndex = 12;
             // 
-            // textBox6
+            // firstNameTextBox
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(286, 153);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(145, 22);
-            this.textBox6.TabIndex = 13;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.firstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.firstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameTextBox.Location = new System.Drawing.Point(212, 257);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(164, 22);
+            this.firstNameTextBox.TabIndex = 13;
             // 
-            // textBox7
+            // lastNameTextBox
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(135, 153);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(145, 22);
-            this.textBox7.TabIndex = 14;
+            this.lastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.lastNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameTextBox.Location = new System.Drawing.Point(212, 369);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(164, 22);
+            this.lastNameTextBox.TabIndex = 14;
             // 
-            // richTextBox1
+            // addressRichTextBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FloralWhite;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(174, 276);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(373, 83);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
+            this.addressRichTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.addressRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressRichTextBox.Location = new System.Drawing.Point(212, 540);
+            this.addressRichTextBox.Name = "addressRichTextBox";
+            this.addressRichTextBox.Size = new System.Drawing.Size(164, 22);
+            this.addressRichTextBox.TabIndex = 15;
+            this.addressRichTextBox.Text = "";
             // 
-            // comboBox1
+            // programComboBox
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FloralWhite;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(286, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(222, 21);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.programComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.programComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.programComboBox.FormattingEnabled = true;
+            this.programComboBox.Location = new System.Drawing.Point(212, 202);
+            this.programComboBox.Name = "programComboBox";
+            this.programComboBox.Size = new System.Drawing.Size(164, 21);
+            this.programComboBox.TabIndex = 16;
             // 
             // nextButton
             // 
@@ -238,12 +236,13 @@
             this.nextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.nextButton.Location = new System.Drawing.Point(305, 388);
+            this.nextButton.Location = new System.Drawing.Point(240, 579);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(108, 38);
             this.nextButton.TabIndex = 17;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = false;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // topPanel
             // 
@@ -251,7 +250,7 @@
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(722, 30);
+            this.topPanel.Size = new System.Drawing.Size(595, 30);
             this.topPanel.TabIndex = 18;
             // 
             // leftPanel
@@ -260,61 +259,74 @@
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 30);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(9, 442);
+            this.leftPanel.Size = new System.Drawing.Size(9, 684);
             this.leftPanel.TabIndex = 19;
             // 
             // rightPanel
             // 
             this.rightPanel.BackColor = System.Drawing.Color.Bisque;
             this.rightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightPanel.Location = new System.Drawing.Point(713, 30);
+            this.rightPanel.Location = new System.Drawing.Point(586, 30);
             this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(9, 442);
+            this.rightPanel.Size = new System.Drawing.Size(9, 684);
             this.rightPanel.TabIndex = 20;
             // 
             // bottomPanel
             // 
             this.bottomPanel.BackColor = System.Drawing.Color.NavajoWhite;
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(9, 463);
+            this.bottomPanel.Location = new System.Drawing.Point(9, 705);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(704, 9);
+            this.bottomPanel.Size = new System.Drawing.Size(577, 9);
             this.bottomPanel.TabIndex = 21;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BackColor = System.Drawing.Color.LightSalmon;
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox.Location = new System.Drawing.Point(160, 88);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(273, 550);
+            this.pictureBox.TabIndex = 22;
+            this.pictureBox.TabStop = false;
             // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(722, 472);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(595, 714);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.nextButton);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.programComboBox);
+            this.Controls.Add(this.addressRichTextBox);
+            this.Controls.Add(this.lastNameTextBox);
+            this.Controls.Add(this.firstNameTextBox);
+            this.Controls.Add(this.ageTextBox);
+            this.Controls.Add(this.contactNoTextBox);
+            this.Controls.Add(this.middleNameTextBox);
+            this.Controls.Add(this.studentNoTextBox);
+            this.Controls.Add(this.addressLabel);
+            this.Controls.Add(this.contactNumberLabel);
+            this.Controls.Add(this.middleNameLabel);
+            this.Controls.Add(this.programLabel);
+            this.Controls.Add(this.firstNameLabel);
+            this.Controls.Add(this.ageLabel);
+            this.Controls.Add(this.lastNameLabel);
+            this.Controls.Add(this.studentNumberLabel);
+            this.Controls.Add(this.pictureBox);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FrmRegistration_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,27 +334,28 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label studentNumberLabel;
+        private System.Windows.Forms.Label lastNameLabel;
+        private System.Windows.Forms.Label ageLabel;
+        private System.Windows.Forms.Label firstNameLabel;
+        private System.Windows.Forms.Label programLabel;
+        private System.Windows.Forms.Label middleNameLabel;
+        private System.Windows.Forms.Label contactNumberLabel;
+        private System.Windows.Forms.Label addressLabel;
+        private System.Windows.Forms.TextBox studentNoTextBox;
+        private System.Windows.Forms.TextBox middleNameTextBox;
+        private System.Windows.Forms.TextBox contactNoTextBox;
+        private System.Windows.Forms.TextBox ageTextBox;
+        private System.Windows.Forms.TextBox firstNameTextBox;
+        private System.Windows.Forms.TextBox lastNameTextBox;
+        private System.Windows.Forms.RichTextBox addressRichTextBox;
+        private System.Windows.Forms.ComboBox programComboBox;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.Panel rightPanel;
         private System.Windows.Forms.Panel bottomPanel;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
 
