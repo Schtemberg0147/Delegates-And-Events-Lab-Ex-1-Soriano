@@ -10,6 +10,8 @@ namespace Delegates
     public delegate string DelegateText(string txt);
     internal class StudentInfoClass
     {
+        public delegate long DelegateNumber(long number);
+        public delegate string DelegateText(string txt);
         public static string FirstName = " ";
         public static string LastName = " ";
         public static string MiddleName = " ";
@@ -18,7 +20,9 @@ namespace Delegates
         public static long Age = 0;
         public static long ContactNo = 0;
         public static long StudentNo = 0;
-        public static string[] AddPrograms = { };
+
+        //Just for convenience in inserting items in the combobox
+        public static string[] AddPrograms = {"BSIT", "BSCS", "BSCPE", "BSIS", "BSBA", "BSA", "BSED"};
 
         public static string GetFirstName(string FirstName)
         {

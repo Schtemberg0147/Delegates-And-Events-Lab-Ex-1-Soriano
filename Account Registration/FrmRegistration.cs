@@ -21,24 +21,38 @@ namespace Account_Registration
         
         DelegateText getFirstName, getLastName, getMiddleName, getAddress, getProgram;
         DelegateNumber getAge, getContactNo, getStudentNo;
+        FrmConfirm confirmForm = new FrmConfirm();
         public FrmRegistration()
         {
             InitializeComponent();
             InitializeDelegates();
+            programComboBox.Items.AddRange(StudentInfoClass.AddPrograms);
         }
 
         private void FrmRegistration_Load(object sender, EventArgs e)
         {
             InitializePixelFont();
+            titleLabel.Font = new Font(titleLabel.Font.FontFamily, 18, FontStyle.Bold);
             InitializeLabelBackColor();
         }
 
-        private void InitializeLabelBackColor()
+        public void InitializePixelFont() //adds custom font to the form
         {
-            MakeLabelTransparentOverPictureBox(pictureBox, studentNumberLabel, programLabel, firstNameLabel, middleNameLabel, lastNameLabel, ageLabel, contactNumberLabel, addressLabel);
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            string fontFilePath = Path.Combine(Application.StartupPath, "CustomFonts", "static", "PixelifySans-Regular.ttf");
+            pfc.AddFontFile(fontFilePath);
+            foreach (Control c in this.Controls)
+            {
+                c.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+            }
         }
 
-        private void MakeLabelTransparentOverPictureBox(PictureBox pictureBox, params System.Windows.Forms.Label[] labels)
+        public void InitializeLabelBackColor() 
+        {
+            MakeLabelTransparentOverPictureBox(pictureBox, titleLabel, studentNumberLabel, programLabel, firstNameLabel, middleNameLabel, lastNameLabel, ageLabel, contactNumberLabel, addressLabel);
+        }
+
+        public void MakeLabelTransparentOverPictureBox(PictureBox pictureBox, params System.Windows.Forms.Label[] labels) //this will ensure that the labels' backcolor are transparent on top of a picturebox
         {
             foreach(var label in labels){
                 Point oldPos = label.PointToScreen(Point.Empty);
@@ -50,9 +64,20 @@ namespace Account_Registration
             } 
         }
 
-        
+        //Title bar buttons
+        private void minimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void InitializeDelegates()
         {
+            getFirstName = new DelegateText(StudentInfoClass.GetFirstName);
             getLastName = new DelegateText(StudentInfoClass.GetLastName);
             getMiddleName = new DelegateText(StudentInfoClass.GetMiddleName);
             getAddress = new DelegateText(StudentInfoClass.GetAddress);
@@ -60,17 +85,6 @@ namespace Account_Registration
             getAge = new DelegateNumber(StudentInfoClass.GetAge);
             getContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             getStudentNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
-        }
-
-        private void InitializePixelFont()
-        {
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            string fontFilePath = Path.Combine(Application.StartupPath, "CustomFonts", "static", "PixelifySans-Regular.ttf");
-            pfc.AddFontFile(fontFilePath);
-            foreach (Control c in this.Controls)
-            {
-                c.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
-            }
         }
 
         private void nextButton_Click(object sender, EventArgs e)
@@ -84,8 +98,25 @@ namespace Account_Registration
             StudentInfoClass.ContactNo = getContactNo(Convert.ToInt64(contactNoTextBox.Text));
             StudentInfoClass.StudentNo = getStudentNo(Convert.ToInt64(studentNoTextBox.Text));
 
-            FrmConfirm formConfirmation = new FrmConfirm(); //Initialize instance of FrmConfirm
-            formConfirmation.Show();  //show FrmConfirm
+            using (FrmConfirm confirmForm = new FrmConfirm())
+            {
+                DialogResult result = confirmForm.ShowDialog();
+
+                if (result == DialogResult.OK) //Once the FrmConfirm closes the text boxes will reset
+                {
+                    firstNameTextBox.Text = "";
+                    lastNameTextBox.Text = "";
+                    middleNameTextBox.Text = "";
+                    addressRichTextBox.Text = "";
+                    programComboBox.Text = "";
+                    ageTextBox.Text = "";
+                    contactNoTextBox.Text = "";
+                    studentNoTextBox.Text = "";
+
+                    InitializePixelFont(); //Reapply custom font
+                }
+            }
+            
         }
     }
 }

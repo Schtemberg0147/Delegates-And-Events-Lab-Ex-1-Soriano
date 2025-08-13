@@ -1,26 +1,62 @@
-﻿using System;
+﻿using Delegates;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Delegates;
 
 namespace Account_Registration
 {
     public partial class FrmConfirm : Form
     {
-
         private DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
         private DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+
         public FrmConfirm()
         {
             InitializeComponent();
-            InitializeDelegates();
         }
+
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+            InitializePixelFont();
+            InitializeDelegates();
+            confirmationLabel.Font = new Font(confirmationLabel.Font.FontFamily, 18, FontStyle.Bold);
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        public void InitializePixelFont()
+        {
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            string fontFilePath = Path.Combine(Application.StartupPath, "CustomFonts", "static", "PixelifySans-Regular.ttf");
+            pfc.AddFontFile(fontFilePath);
+            foreach (Control c in this.Controls)
+            {
+                c.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+            }
+        }
+
+        private void FrmConfirm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
         private void InitializeDelegates()
         {
             DelProgram = new DelegateText(StudentInfoClass.GetProgram);
@@ -34,6 +70,7 @@ namespace Account_Registration
 
             InitilizeValues();
         }
+
         private void InitilizeValues()
         {
             programValue.Text = DelProgram(StudentInfoClass.Program);
@@ -43,7 +80,9 @@ namespace Account_Registration
             addressValue.Text = DelAddress(StudentInfoClass.Address);
             ageValue.Text = DelNumAge(StudentInfoClass.Age).ToString();
             contactNoValue.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
-            studentNoValue.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
+            studentNoValue.Text = $"0{DelStudNo(StudentInfoClass.StudentNo).ToString()}";
+
+            InitializePixelFont(); //Reapply custom font
         }   
     }
 }
